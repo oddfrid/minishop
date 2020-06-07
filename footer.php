@@ -1,5 +1,7 @@
 <footer>
     <section class="footer-wrap">
-        <div></div>
+        <div class="copyright">
+        <p > &copy;blord & rjeraldi</p>
+        </div>
     </section>
 </footer>

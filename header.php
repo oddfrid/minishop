@@ -7,13 +7,13 @@
             <h1>Minishop</h1>
             <div class="header__user-actions">
                 <div class="user-action user-login">
-                    <a href="http://" class="action-link" target="_blank" rel="noopener noreferrer">Log in</a>
+                    <a href="login_page.php" class="action-link" >Log in</a>
                 </div>
                 <div class="user-action user-signin">
-                    <a href="http://" class="action-link" target="_blank" rel="noopener noreferrer">Sign up</a>
+                    <a href="signup_page.php" class="action-link" >Sign up</a>
                 </div>
                 <div class="user-action user-basket">
-                    <a href="basket.php" class="action-link" target="_blank" rel="noopener noreferrer">Basket</a>
+                    <a href="basket.php" class="action-link">Basket</a>
                 </div>
             </div>
         </section>

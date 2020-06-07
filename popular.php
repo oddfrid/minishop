@@ -19,7 +19,7 @@
     <main>
         <section class="main-wrap">
             <article class="all">
-                <h2>NEW BOOKS</h2>
+                <h2>POPULAR BOOKS</h2>
                 <div class="all-content">
                     <ul class="list">
                     <?php

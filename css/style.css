@@ -21,10 +21,10 @@ li {
 h1 {
     padding-left: 8%;
     font-size: 54px;
-    /* background-image: url('../img/header-bg.gif');
+    background-image: url('../img/space.jpg');
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent; */
+    color: transparent;
 }
 h2 {
     text-align: center;
@@ -65,7 +65,7 @@ input::placeholder {
     height: 50px;
     border-radius: 50%;
     background: #000;
-    /* background-image: url('../img/header-bg.gif'); */
+    background-image: url('../img/space.jpg');
 }
 /* ACTIONS */
 .header__user-actions{
@@ -75,13 +75,18 @@ input::placeholder {
     padding-left: 20px;
 }
 .action-link, h2 {
-    color: rgb(231, 0, 143);
+    color: rgb(49, 52, 235);
+}
+.action-link {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(143, 143, 143);
 }
 .user-login {
 }
 .user-signin {
 }
-.user-basket {
+.user-basket::after {
+    u
 }
 
 /* MENU */
@@ -90,17 +95,17 @@ input::placeholder {
 }
 .meni-list {
     display: flex;
-    background-color: rgb(187, 134, 211);
+    background-color: rgb(138, 93, 189);
     padding: 0px 45px;
     box-shadow:  1px 1px 3px rgb(143, 143, 143);
 }
 .menu-list-elem {
     padding: 12px 20px;
-    background-color: rgb(187, 134, 211);
+    
 }
 .menu-list-elem:focus, .menu-list-elem:hover{
     padding: 12px 20px;
-    background-color: rgb(171, 121, 194);
+    background-color: rgb(118, 80, 167);
 }
 .menu-link {
     color: #FFF;
@@ -153,7 +158,7 @@ figure {
 .add-to-basket-btn {
     padding: 10px 20px;
     color: #FFF;
-    background: linear-gradient( 135deg, rgb(231, 0, 143), rgb(238, 113, 176));
+    background: linear-gradient( 135deg, rgb(46, 48, 202), rgb(109, 79, 165));
     border: none;
     border-radius: 35px;
 }
@@ -176,7 +181,7 @@ figure {
 .form-btn {
     padding: 10px 25px;
     color: #FFF;
-    background: linear-gradient( 135deg, rgb(231, 0, 143), rgb(238, 113, 176));
+    background: linear-gradient( 135deg, rgb(46, 48, 202), rgb(109, 79, 165));
     border: none;
     border-radius: 35px;
 
@@ -193,7 +198,7 @@ footer{
 }
 .footer-wrap {
     height: 36px;
-    background-color: rgb(187, 134, 211);
+    background-color:rgb(138, 93, 189);
 }
 
 /** BASKET*/
@@ -236,4 +241,11 @@ td{
     width: 100%;
     padding: 10px;
     text-align: center;
+}
+/*FOOTER*/
+.copyright {
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: end;
+    color: #FFF;
 }
