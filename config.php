@@ -11,3 +11,4 @@ defined('CATEGORY_FILENAME') ? null : define('CATEGORY_FILENAME', 'category');
 
 require_once 'userFunctions.php';
 require_once 'bookFunctions.php';
+require_once 'categoryFunctions.php';
