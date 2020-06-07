@@ -130,8 +130,10 @@ figure {
     align-items: center;
 }
 .qua-input {
-    width: 20px;
-    height: 10px;
+    width: 40px;
+    font-size: 16px;
+    height: 16px;
+    padding: 0;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -192,4 +194,46 @@ footer{
 .footer-wrap {
     height: 36px;
     background-color: rgb(187, 134, 211);
+}
+
+/** BASKET*/
+
+table {
+    width: 60%;
+    margin: auto;
+    padding-top: 30px;
+}
+th{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+td{
+    padding-bottom: 5px;
+}
+.table-center {
+    text-align: center;
+}
+.remove-btn {
+    padding: 10px 25px;
+    border: none;
+    background: linear-gradient( 135deg, rgb(228, 77, 89), rgb(236, 141, 149));
+    border-radius: 35px;
+}
+.total {
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.price {
+    text-align: center;
+    font-weight: bold;
+}
+
+.checkout {
+    display: block;
+    background-color: rgb(98, 159, 216);
+    color: #FFF;
+    font-size: 24px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
