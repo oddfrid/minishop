@@ -1,7 +1,5 @@
 <?php
-
-require_once "./php/products.php";
-
+    require_once './card.php'
 ?>
 
 <!DOCTYPE html>
@@ -61,22 +59,43 @@ require_once "./php/products.php";
                 <h2>ALL BOOKS</h2>
                 <div class="all-content">
                     <ul class="list">
-                        <?php foreach($products as $product):?>
-                        <li class="list-elem">
-                            <figure>
-                                <img src="<?php echo $product['img-src'];?>" alt="">
-                                <figcaption>
-                                    <p class="book-name">
-                                        <?php echo $product['name'];?>
-                                    </p>
-                                    <p class="book-cost">Cost: <?php echo $product['cost'];?>$</p>
-                                    <div class="main-btn-wrap">
-                                        <button href="http://" class="add-to-basket-btn">ADD TO BACKET</button>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <?php endforeach;?>
+                    <?php
+                        $connect = mysqli_connect('localhost', 'root', '', 'cart');
+                        $query = 'SELECT * FROM products ORDER by id ASC';
+                        $result = mysqli_query($connect, $query);
+
+                        if ($result):
+                            if (mysqli_num_rows($result) > 0):
+                                while($product = mysqli_fetch_assoc($result)): 
+                                ?>
+                                <li class="list-elem">
+                                    <form action="index.php?action=add&id=<?php echo $product['id']; ?>" method="post">
+                                        <figure>
+                                            <img src="<?php echo $product['image'];?>" alt="">
+                                            <figcaption>
+                                                <p class="book-name">
+                                                    <?php echo $product['name'];?>
+                                                </p>
+                                                <p class="book-cost">Price: <?php echo $product['price'];?>$</p>
+                                                <div class="main-btn-wrap">
+                                                    <input class="qua-input" type="text" name="quantity" value="1">
+                                                </div>
+                                                <input type="hidden" name="name" value="<?php echo $product['name'];?>" />
+                                                <input type="hidden" name="price" value="<?php echo $product['price'];?>" />
+                                                <div class="main-btn-wrap">
+                                                    <input type="submit" name="add_to_cart" class="add-to-basket-btn" value="ADD TO BACKET">
+                                                </div>
+                                                <!-- <div class="main-btn-wrap">
+                                                    <input type="submit" class="add-to-basket-btn" value="ADD TO BACKET">
+                                                </div> -->
+                                            </figcaption>
+                                        </figure>
+                                    </form>
+                                </li>
+                                <?php 
+                                endwhile;
+                            endif;
+                        endif; ?>
                     </ul>
                 </div>
             </article>
