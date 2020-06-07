@@ -19,20 +19,20 @@
     <main>
         <section class="main-wrap">
             <article class="all">
-                <h2>ALL BOOKS</h2>
+                <h2>NEW BOOKS</h2>
                 <div class="all-content">
                     <ul class="list">
                     <?php
                         $connect = mysqli_connect('localhost', 'root', '', 'cart');
                         $query = 'SELECT * FROM products ORDER by id ASC';
                         $result = mysqli_query($connect, $query);
-
                         if ($result):
-                            if (mysqli_num_rows($result) > 0 ):
+                            if (mysqli_num_rows($result) > 0):
                                 while($product = mysqli_fetch_assoc($result)): 
+                                    if ($product['type'] == 'classic'):
                                 ?>
                                 <li class="list-elem">
-                                    <form action="index.php?action=add&id=<?php echo $product['id']; ?>" method="post">
+                                    <form action="classic.php?action=add&id=<?php echo $product['id']; ?>" method="post">
                                         <figure>
                                             <img src="<?php echo $product['image'];?>" alt="">
                                             <figcaption>
@@ -45,6 +45,7 @@
                                                 </div>
                                                 <input type="hidden" name="name" value="<?php echo $product['name'];?>" />
                                                 <input type="hidden" name="price" value="<?php echo $product['price'];?>" />
+                                                <input type="hidden" name="type" value="<?php echo $product['type'];?>" />
                                                 <div class="main-btn-wrap">
                                                     <input type="submit" name="add_to_cart" class="add-to-basket-btn" value="ADD TO BACKET">
                                                 </div>
@@ -56,6 +57,7 @@
                                     </form>
                                 </li>
                                 <?php 
+                                endif;
                                 endwhile;
                             endif;
                         endif; ?>

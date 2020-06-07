@@ -13,26 +13,23 @@
                     <a href="http://" class="action-link" target="_blank" rel="noopener noreferrer">Sign up</a>
                 </div>
                 <div class="user-action user-basket">
-                    <a href="http://" class="action-link" target="_blank" rel="noopener noreferrer">Cart</a>
+                    <a href="basket.php" class="action-link" target="_blank" rel="noopener noreferrer">Basket</a>
                 </div>
             </div>
         </section>
         <section class="header-nav">
             <ul class="meni-list">
                 <li class="menu-list-elem">
-                    <a href="" class="menu-link">BOOKS</a>
+                    <a href="index.php" class="menu-link">ALL</a>
                 </li>
                 <li class="menu-list-elem">
-                    <a href="" class="menu-link">BOOKS</a>
+                    <a href="new.php" class="menu-link">NEW</a>
                 </li>
                 <li class="menu-list-elem">
-                    <a href="" class="menu-link">BOOKS</a>
+                    <a href="popular.php" class="menu-link">POPULAR</a>
                 </li>
                 <li class="menu-list-elem">
-                    <a href="" class="menu-link">BOOKS</a>
-                </li>
-                <li class="menu-list-elem">
-                    <a href="" class="menu-link">BOOKS</a>
+                    <a href="classic.php" class="menu-link">CLASSIC</a>
                 </li>
             </ul>
         </section>

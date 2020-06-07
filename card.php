@@ -13,7 +13,8 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
                 'id' => filter_input(INPUT_GET, 'id'),
                 'name' => filter_input(INPUT_POST, 'name'),
                 'price' => filter_input(INPUT_POST, 'price'),
-                'quantity' => filter_input(INPUT_POST, 'quantity'),                
+                'quantity' => filter_input(INPUT_POST, 'quantity'),   
+                'type' => filter_input(INPUT_POST, 'type'),      
             );
         }
         else {
@@ -31,6 +32,7 @@ if (filter_input(INPUT_POST, 'add_to_cart')) {
             'name' => filter_input(INPUT_POST, 'name'),
             'price' => filter_input(INPUT_POST, 'price'),
             'quantity' => filter_input(INPUT_POST, 'quantity'),
+            'type' => filter_input(INPUT_POST, 'type'),  
         );
     }
 }
