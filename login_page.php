@@ -13,7 +13,7 @@
         require_once './header.php'
     ?>
     <main class="form-wrap-out">
-        <form action="" method="get">
+        <form action="" method="">
             <h2>Log in</h2>
             <div class="form-wrap-in">
                 <div class="form-elem-cell">

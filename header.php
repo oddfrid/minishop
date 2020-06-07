@@ -7,10 +7,16 @@
             <h1>Minishop</h1>
             <div class="header__user-actions">
                 <div class="user-action user-login">
-                    <a href="login_page.php" class="action-link" >Log in</a>
+                    <a href="login_page.php" class="action-link">Log in</a>
+                </div>
+                <div class="user-action user-logout" hidden>
+                    <a href="login_page.php" class="action-link">Log out</a>
                 </div>
                 <div class="user-action user-signin">
-                    <a href="signup_page.php" class="action-link" >Sign up</a>
+                    <a href="signup_page.php" class="action-link">Sign up</a>
+                </div>
+                <div class="user-action user-page" hidden>
+                    <a href="signup_page.php" class="action-link">My account</a>
                 </div>
                 <div class="user-action user-basket">
                     <a href="basket.php" class="action-link">Basket</a>

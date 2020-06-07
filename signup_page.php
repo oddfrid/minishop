@@ -13,20 +13,20 @@
         require_once './header.php'
 ?>
     <main class="form-wrap-out">
-        <form action="" method="POST">
+        <form action="login_page.php" method="">
             <h2>Sign in</h2>
             <div class="form-wrap-in">
                 <div class="form-elem-cell">
                     <label for="first name">First name</label>
-                    <input type="text" name="first name" placeholder="First name" required>                    
+                    <input type="text" name="first name" placeholder="First name" pattern="^([a-zA-Z]|\s)*$" required>                    
                 </div>
                 <div class="form-elem-cell">
                     <label for="last name">Last name</label>
-                    <input type="text" name="last name" placeholder="Last name" required>                    
+                    <input type="text" name="last name" placeholder="Last name" pattern="^([a-zA-Z]|\s)*$" required>                    
                 </div>
                 <div class="form-elem-cell">
                     <label for="phone">Phone number</label>
-                    <input type="tel" name="phone" placeholder="Phone number" required>                    
+                    <input type="tel" name="phone" placeholder="Phone number" pattern="^((\+7|7|8)+([0-9]){10})$" required>                    
                 </div>
                 <div class="form-elem-cell">
                     <label for="email">Email</label>
