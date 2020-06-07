@@ -1,0 +1,251 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body, h1, h2, p, ul, li, figure {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+label {
+    display: block;
+}
+li {
+    list-style: none;
+}
+h1 {
+    padding-left: 8%;
+    font-size: 54px;
+    background-image: url('../img/space.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+img {
+    max-width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+main {
+    flex: 1 0 auto;
+    background: linear-gradient(rgb(255, 255, 255), rgb(247, 232, 253));
+}
+a {
+    text-decoration: none;
+
+}
+input {
+    padding: 5px 10px;
+}
+input::placeholder {
+    opacity: 0.6;
+    font-size: 14px;
+}
+/* INDEX*/
+.header-wrap {
+
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 80px;
+}
+.logo {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    background-image: url('../img/space.jpg');
+}
+/* ACTIONS */
+.header__user-actions{
+    display: flex;
+}
+.user-action {
+    padding-left: 20px;
+}
+.action-link, h2 {
+    color: rgb(49, 52, 235);
+}
+.action-link {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(143, 143, 143);
+}
+.user-login {
+}
+.user-signin {
+}
+.user-basket::after {
+    u
+}
+
+/* MENU */
+.header-nav {
+
+}
+.meni-list {
+    display: flex;
+    background-color: rgb(138, 93, 189);
+    padding: 0px 45px;
+    box-shadow:  1px 1px 3px rgb(143, 143, 143);
+}
+.menu-list-elem {
+    padding: 12px 20px;
+    
+}
+.menu-list-elem:focus, .menu-list-elem:hover{
+    padding: 12px 20px;
+    background-color: rgb(118, 80, 167);
+}
+.menu-link {
+    color: #FFF;
+    text-shadow: 0px 0px 2px rgb(219, 219, 219);
+}
+/**INDEX*/
+
+.main-wrap {
+    padding: 30px 10px;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-elem {
+    width: 230px;
+    height: 350px;
+    box-shadow:  1px 1px 8px rgb(143, 143, 143);
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qua-input {
+    width: 40px;
+    font-size: 16px;
+    height: 16px;
+    padding: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.book-name {
+    font-size: 18px;
+    text-align: center;
+    height: 40px;
+}
+.book-cost {
+    padding: 5px 0px;
+    text-align: end;
+}
+.main-btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+.add-to-basket-btn {
+    padding: 10px 20px;
+    color: #FFF;
+    background: linear-gradient( 135deg, rgb(46, 48, 202), rgb(109, 79, 165));
+    border: none;
+    border-radius: 35px;
+}
+
+/* LOG IN */
+.form-wrap-out {
+    padding-top:50px;
+    display: flex;
+    justify-content: center;
+}
+.form-elem-cell {
+    margin-top: 10px;
+
+}
+.btn {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.form-btn {
+    padding: 10px 25px;
+    color: #FFF;
+    background: linear-gradient( 135deg, rgb(46, 48, 202), rgb(109, 79, 165));
+    border: none;
+    border-radius: 35px;
+
+}
+
+/* SIGN IN */
+
+/* BASKET */
+
+
+/* FOOTER */
+footer{
+    flex-shrink: 0;
+}
+.footer-wrap {
+    height: 36px;
+    background-color:rgb(138, 93, 189);
+}
+
+/** BASKET*/
+
+table {
+    width: 60%;
+    margin: auto;
+    padding-top: 30px;
+}
+th{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+td{
+    padding-bottom: 5px;
+}
+.table-center {
+    text-align: center;
+}
+.remove-btn {
+    padding: 10px 25px;
+    border: none;
+    background: linear-gradient( 135deg, rgb(228, 77, 89), rgb(236, 141, 149));
+    border-radius: 35px;
+}
+.total {
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.price {
+    text-align: center;
+    font-weight: bold;
+}
+
+.checkout {
+    display: block;
+    background-color: rgb(98, 159, 216);
+    color: #FFF;
+    font-size: 24px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+/*FOOTER*/
+.copyright {
+    padding-top: 5px;
+    padding-right: 5px;
+    text-align: end;
+    color: #FFF;
+}
